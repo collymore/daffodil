@@ -24,6 +24,3 @@ $theme-dark: configure-theme.daff-configure-theme(
 	$tertiary-dark,
 	'dark'
 );
-
-$black: core.daff-map-get($theme, 'core', 'black');
-$white: core.daff-map-get($theme, 'core', 'white');

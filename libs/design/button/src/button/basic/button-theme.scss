@@ -36,11 +36,25 @@
 	$neutral: daff-get-palette($theme, neutral);
 	$base: daff-get-base-color($theme, base);
 	$base-contrast: daff-get-base-color($theme, base-contrast);
-	$white: daff-get-base-color($theme, 'white');
-	$black: daff-get-base-color($theme, 'black');
 	$mode: daff-get-theme-mode($theme);
 
 	.daff-button {
+		&.daff-dark {
+			@include daff-button-theme-variant(
+				daff-color($neutral, 100),
+				daff-color($neutral, 90),
+				daff-color($neutral, 80)
+			);
+		}
+
+		&.daff-light {
+			@include daff-button-theme-variant(
+				daff-color($neutral, 10),
+				daff-color($neutral, 20),
+				daff-color($neutral, 30)
+			);
+		}
+
 		@include light($mode) {
 			@include daff-button-theme-variant(
 				daff-color($neutral, 10),
@@ -69,22 +83,6 @@
 					daff-color($tertiary),
 					daff-color($tertiary, 70),
 					daff-color($tertiary, 80)
-				);
-			}
-
-			&.daff-dark {
-				@include daff-button-theme-variant(
-					daff-color($neutral, 100),
-					daff-color($neutral, 90),
-					daff-color($neutral, 80)
-				);
-			}
-
-			&.daff-light {
-				@include daff-button-theme-variant(
-					daff-color($neutral, 10),
-					daff-color($neutral, 20),
-					daff-color($neutral, 30)
 				);
 			}
 
@@ -157,22 +155,6 @@
 					daff-color($tertiary),
 					daff-color($tertiary, 40),
 					daff-color($tertiary, 30)
-				);
-			}
-
-			&.daff-dark {
-				@include daff-button-theme-variant(
-					daff-color($neutral, 100),
-					daff-color($neutral, 90),
-					daff-color($neutral, 80)
-				);
-			}
-
-			&.daff-light {
-				@include daff-button-theme-variant(
-					$white,
-					daff-color($neutral, 20),
-					daff-color($neutral, 30)
 				);
 			}
 

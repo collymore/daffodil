@@ -1,9 +1,6 @@
 @use '../../scss/theming' as *;
 
 @mixin daff-notification-theme($theme) {
-	$primary: daff-get-palette($theme, primary);
-	$secondary: daff-get-palette($theme, secondary);
-	$tertiary: daff-get-palette($theme, tertiary);
 	$info: daff-get-palette($theme, informational);
 	$warn: daff-get-palette($theme, warn);
 	$critical: daff-get-palette($theme, critical);
@@ -11,8 +8,6 @@
 	$neutral: daff-get-palette($theme, neutral);
 	$base: daff-get-base-color($theme, base);
 	$base-contrast: daff-get-base-color($theme, base-contrast);
-	$black: daff-get-base-color($theme, 'black');
-	$white: daff-get-base-color($theme, 'white');
 	$mode: daff-get-theme-mode($theme);
 
 	.daff-notification {

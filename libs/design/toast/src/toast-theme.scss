@@ -7,8 +7,6 @@
 	$success: daff-get-palette($theme, success);
 	$neutral: daff-get-palette($theme, neutral);
 	$base: daff-get-base-color($theme, base);
-	$black: daff-get-base-color($theme, 'black');
-	$white: daff-get-base-color($theme, 'white');
 	$mode: daff-get-theme-mode($theme);
 
 	.daff-toast {

@@ -2,7 +2,6 @@
 
 @mixin daff-switch-theme($theme) {
 	$primary: daff-get-palette($theme, primary);
-	$white: daff-get-base-color($theme, 'white');
 	$neutral: daff-get-palette($theme, neutral);
 	$mode: daff-get-theme-mode($theme);
 

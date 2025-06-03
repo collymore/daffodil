@@ -2,7 +2,6 @@
 
 @mixin daff-media-gallery-theme($theme) {
 	$neutral: daff-get-palette($theme, neutral);
-	$white: daff-get-base-color($theme, 'white');
 	$mode: daff-get-theme-mode($theme);
 
 	.daff-media-gallery {

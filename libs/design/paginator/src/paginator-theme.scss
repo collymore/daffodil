@@ -3,7 +3,6 @@
 // stylelint-disable selector-class-pattern
 @mixin daff-paginator-theme($theme) {
 	$base-contrast: daff-get-base-color($theme, base-contrast);
-	$white: daff-get-base-color($theme, 'white');
 	$neutral: daff-get-palette($theme, neutral);
 	$mode: daff-get-theme-mode($theme);
 

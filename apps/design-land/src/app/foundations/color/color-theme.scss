@@ -1,9 +1,6 @@
 @use 'theme' as daff-theme;
 
 @mixin color-theme($theme) {
-	$white: daff-theme.daff-map-get($theme, 'core', 'white');
-	$black: daff-theme.daff-map-get($theme, 'core', 'black');
-
 	.dl-color {
 		&__palette {
 			> * {

@@ -19,8 +19,8 @@
 // ```
 @function daff-text-contrast(
 	$color,
-	$black: get-color.daff-color(palette.$daff-neutral, 110),
-	$white: palette.$daff-white
+	$black: palette.$black,
+	$white: palette.$white
 ) {
 	$light-contrast: cr.daff-contrast-ratio($color, $white);
 	$dark-contrast: cr.daff-contrast-ratio($color, $black);
