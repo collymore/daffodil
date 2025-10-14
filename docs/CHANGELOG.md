@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.91.0](https://github.com/graycoreio/daffodil/compare/v0.90.0...v0.91.0) (2025-10-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **design:** Checkbox components have been moved to their own package and need to be imported from `@daffodil/design/checkbox`.
+* **design:** Modal behavior now restricts to a single open modal at any time. When a new modal is opened, any previously open modal will be automatically closed. Previously, multiple modals could be stacked and displayed simultaneously.
+
+### Features
+
+* **design:** create `daff-get-font-colors` function ([#4118](https://github.com/graycoreio/daffodil/issues/4118)) ([b6aca33](https://github.com/graycoreio/daffodil/commit/b6aca33f54a283c54ef202d6a7e90924f1a6cd0d))
+* **design:** create `DaffDisableableDirective` ([#3753](https://github.com/graycoreio/daffodil/issues/3753)) ([d5c9fb7](https://github.com/graycoreio/daffodil/commit/d5c9fb7fd2308999db206922babd9e2953794256))
+* **design:** only allow one modal to be open at a time ([#4110](https://github.com/graycoreio/daffodil/issues/4110)) ([68c36e5](https://github.com/graycoreio/daffodil/commit/68c36e5309f1cd7c43815b2dc8149a7930617d78))
+* **design:** shard and convert checkbox components to standalone ([#4127](https://github.com/graycoreio/daffodil/issues/4127)) ([e7fc3bd](https://github.com/graycoreio/daffodil/commit/e7fc3bd30ca3f33f31694c4e74c2f0facd3939c8))
+* **design:** update `daff-text-contrast` function ([#4122](https://github.com/graycoreio/daffodil/issues/4122)) ([4559ebd](https://github.com/graycoreio/daffodil/commit/4559ebd9599dfd03cd6f5167c5d6fbaf3169f80a))
+
+
+### Bug Fixes
+
+* **design:** fix duplicate track keys in DaffTreeComponent by using unique node IDs ([#4115](https://github.com/graycoreio/daffodil/issues/4115)) ([2f849d7](https://github.com/graycoreio/daffodil/commit/2f849d7417e574ebe2a2c177411b51234a0ee9a5))
+
 ## [0.90.0](https://github.com/graycoreio/daffodil/compare/v0.89.0...v0.90.0) (2025-10-07)
 
 
